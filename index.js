@@ -4,13 +4,13 @@ const LogSource = require('./lib/log-source')
 const Printer = require('./lib/printer')
 
 // You can adjust this variable to see how your solutions perform under various "load"
-const sourceCount = 100
+const sourceCount = 10000
 
 /**
  * Challenge Number 1!
- * 
+ *
  * Assume that a LogSource only has one method: pop() which will return a LogEntry.
- * 
+ *
  * A LogEntry is simply an object of the form:
  * {
  * 		date: Date,
@@ -19,7 +19,7 @@ const sourceCount = 100
  *
  * All LogEntries from a given LogSource are guaranteed to be popped in chronological order.
  * Eventually a LogSource will end and return boolean false.
- * 
+ *
  * Your job is simple: print the sorted merge of all LogEntries across `n` LogSources.
  *
  * Call `printer.print(logEntry)` to print each entry of the merged output as they are ready.
